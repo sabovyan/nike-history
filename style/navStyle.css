@@ -7,11 +7,11 @@ header {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background: black;
+	background: #242424;
 	align-items: center;
 	padding: 0 10px;
 	height: 4rem;
-	width: 100vw;
+	width: 100%;
 }
 header img {
 	width: 60px;
