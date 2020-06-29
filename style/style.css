@@ -6,3 +6,10 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
+main {
+	background-color: #fefefe;
+	margin: 4rem 0;
+}

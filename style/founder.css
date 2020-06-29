@@ -1,0 +1,86 @@
+@font-face {
+	font-family: main-text;
+	src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+main {
+	font-family: sans-serif;
+}
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem;
+	text-align: center;
+}
+.section__title {
+	width: 100%;
+	font-family: main-text;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+.card {
+	perspective: 1000px;
+	width: 350px;
+	height: 450px;
+	margin: 5rem;
+}
+.card__inner {
+	position: relative;
+	transition: all 0.7s;
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	border-radius: 2%;
+	box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+	font-family: main-text;
+}
+.card:hover .card__inner {
+	box-shadow: 0 8px 16px 16px rgba(73, 53, 53, 0.2);
+}
+.card:hover .card__inner {
+	transform: rotateY(180deg);
+}
+.card__front,
+.card__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	padding: 1.4rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	align-items: center;
+}
+.card__back {
+	transform: rotateY(180deg);
+	font-size: 1.1rem;
+	padding: 2rem;
+}
+.card__front-img {
+	display: inline-block;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	margin: 0 1rem 2rem;
+}
+.card__front-name {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.card__front-nickname {
+	font-style: italic;
+}
+.card__back-item {
+	margin-bottom: 1rem;
+}
+.link a {
+	color: black;
+	font-size: 30px;
+}
+.link a:hover {
+	color: rgb(58, 197, 197);
+}

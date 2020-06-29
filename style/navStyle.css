@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'scr';
-	src: url('../script/Anton/Anton-Regular.ttf');
+	font-family: scr;
+	src: url('../fonts/Anton/Anton-Regular.ttf');
 }
 header {
 	display: flex;
@@ -12,6 +12,10 @@ header {
 	padding: 0 10px;
 	height: 4rem;
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 header img {
 	width: 60px;
