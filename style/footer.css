@@ -1,22 +1,112 @@
-footer {
-	height: 3rem;
+@import './variables.css';
+
+.c-main-footer {
+	height: 15rem;
 	width: 100%;
-	background-color: #242424;
-	line-height: 2rem;
+	background-color: var(--bg-black);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.l-main-footer__item {
+	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
-	padding: 5px;
+
+	align-items: center;
+	width: 100%;
+
+	box-sizing: border-box;
 }
-footer a {
+.c-main-footer__links {
+	height: 100%;
+	align-items: flex-start;
+}
+
+.c-main-footer__nike {
+	box-sizing: border-box;
 	color: white;
+	width: 100px;
+	height: 20%;
 	font-size: 1.2rem;
 	text-decoration: none;
 	text-transform: capitalize;
 	margin: 1rem;
 	transition: all 0.2s;
+	position: relative;
+	padding: 1rem;
+	position: relative;
 }
-footer a:hover {
-	color: rgb(0, 255, 255);
-	text-shadow: 5px 2px 2px rgb(4, 248, 187);
+
+.c-main-footer__nike::after {
+	position: absolute;
+	box-sizing: border-box;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 2px;
+	left: 0%;
+	border-bottom: 5px solid var(--nav-item-hover);
+	z-index: 0;
+	transform: scaleX(0);
+	background: var(--nav-bg-hover);
+}
+.c-main-footer__nike:hover::after {
+	animation: background 0.5s forwards;
+}
+@keyframes background {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1.035);
+	}
+}
+.c-main-footer__icon {
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	margin: 1rem;
+	transition: all 0.2s;
+	position: relative;
+	padding: 1rem;
+	border-radius: 50%;
+	box-shadow: 1px 1px rgb(128, 126, 126);
+}
+.c-main-footer__icon::after {
+	position: absolute;
+	content: '';
+	width: 90%;
+	height: 90%;
+	top: 0px;
+	left: 0px;
+	border: 2px solid var(--nav-item-hover);
+	border-radius: 50%;
+	z-index: 1;
+	transform: scaleX(0);
+	background: var(--nav-bg-hover);
+}
+.c-main-footer__icon:hover {
+	font-size: 1.4rem;
+	box-shadow: none;
+}
+.c-main-footer__icon:hover::after {
+	animation: background 0.2s forwards;
+	box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.185);
+}
+
+.c-main-footer__sport img {
+	width: 40px;
+	transition: all 1s;
+}
+img.c-main-footer__box {
+	width: 30px;
+}
+.c-main-footer__sport {
+	overflow: hidden;
+}
+.c-main-footer__sport img:hover {
+	transform: scale(1.5);
 }

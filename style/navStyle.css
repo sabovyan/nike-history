@@ -1,103 +1,94 @@
-@font-face {
-	font-family: scr;
-	src: url('../fonts/Anton/Anton-Regular.ttf');
-}
-header {
+@import '../style/variables.css';
+
+.c-main-header {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background: #242424;
+	background: var(--bg-black);
 	align-items: center;
 	padding: 0 10px;
-	height: 4rem;
+	height: 3rem;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
 }
-header img {
+
+.c-main-header__image {
 	width: 60px;
 }
 
-nav {
-	width: 70%;
-	height: 2rem;
-	display: flex;
-	justify-content: space-between;
+.c-main-header__nav {
+	width: 50%;
+	height: 100%;
 }
 
-nav a {
-	text-decoration: none;
-	color: white;
+.c-main-header__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.c-main-header__list-item {
+	height: 100%;
+}
+
+.c-main-header__list-link,
+.c-main-header__list-link--active {
+	color: var(--nav-txt-color);
 	text-transform: capitalize;
-	width: 1500px;
-	line-height: 2rem;
+	line-height: 3rem;
 	font-weight: 900;
-	font-size: 1.3rem;
-	margin-left: 0.5rem;
+	font-size: 1.5rem;
+	padding: 0.9rem;
 	text-align: center;
-	font-family: serif;
 	transition: all 0.2s;
 	position: relative;
+	text-decoration: none;
 }
-nav a:hover {
-	background: linear-gradient(
-		to bottom,
-		rgb(0, 255, 242) 55%,
-		rgb(10, 218, 131) 80%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-family: scr;
+
+.c-main-header__list-link:hover {
 }
-nav a::after {
+
+.c-main-header__list-link::after {
 	position: absolute;
+	box-sizing: border-box;
 	content: '';
-	width: 50%;
-	height: 0.1rem;
-	transition: all 0.05s;
-	bottom: 0;
-	left: 25%;
+	width: 100%;
+	height: 100%;
+	top: -4px;
+	left: 0%;
+	border-bottom: 5px solid var(--nav-item-hover);
+	z-index: -1;
+	transform: scaleX(0);
 }
-nav a:hover::after {
-	background: linear-gradient(
-		to bottom,
-		rgb(0, 255, 242) 55%,
-		rgb(10, 218, 131) 80%
-	);
+
+.c-main-header__list-link:hover::after {
+	/* 	background: var(--nav-item-hover); */
 	animation: background 0.5s forwards;
 }
 @keyframes background {
 	from {
-		transform: scale(0.6);
+		transform: scaleX(0);
 	}
 	to {
-		transform: scale(1.5);
+		transform: scaleX(0.8);
 	}
 }
-.active {
-	background: linear-gradient(
-		to bottom,
-		rgb(0, 255, 242) 55%,
-		rgb(10, 218, 131) 80%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-family: scr;
-}
-.active::after {
+
+.c-main-header__list-link--active::after {
 	position: absolute;
+	box-sizing: border-box;
 	content: '';
-	width: 50%;
-	height: 0.1rem;
+	width: 100%;
+	height: 100%;
+	background: #ffffff1c;
 	transition: all 0.05s;
-	bottom: 0;
-	left: 25%;
-	background: linear-gradient(
-		to bottom,
-		rgb(0, 255, 242) 55%,
-		rgb(10, 218, 131) 80%
-	);
+	top: -4px;
+	left: 0%;
+	border-bottom: 5px solid var(--nav-item-hover);
+	z-index: -1;
+	transform: scaleX(1);
 }

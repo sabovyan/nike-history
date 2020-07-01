@@ -21,24 +21,33 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="../css/all.css">
+  <!-- ANCHOR css and fontawesome -->
+  <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="../style/founder.css">
   <title>History</title>
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-      <img src="../images/Swoosh.png" alt="swoosh" width="65">
-    </a>
+  <header class="c-main-header">
+    <div class="c-main-header__logo">
+      <a class="c-main-header__image-link" href="../index.html">
+        <img class="c-main-header__image" src="../assets/images/Nike_logo.png" alt="swoosh" width="60">
+      </a>
 
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="./history.html">history</a>
-      <a class="active" href="./founders.html">founders</a>
-      <a href="./facts.html">facts</a>
-      <a href="./survey.html">Survey</a>
+    </div>
+    <nav class="c-main-header__nav">
+      <ul class="c-main-header__list">
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link" href="../index.html"> Home</a>
+        </li>
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link" href="history.html">history</a>
+        </li>
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link--active"
+            href="founders.html">founders</a>
+        </li>
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link" href="survey.html">Survey</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -64,7 +73,7 @@
               native
               of
               Oregon, he is the co-founder and
-              current chairman emeritus of Nike, Inc., and previously served as chairman and CEO of the company.</p>
+              current chairman emeritus of Nike.</p>
             <p class="card__back-item link"><a href="https://en.wikipedia.org/wiki/Phil_Knight"><i
                   class="fab fa-wikipedia-w"></i></a></p>
             <p class="card__back-item link"><a
@@ -104,8 +113,8 @@
       </div>
     </section>
     <!-- SECTION core Members -->
-    <section class="core-members">
-      <h2 class="core-members__title section__title">Core members</h2>
+    <section class="key-members">
+      <h2 class="key-members__title section__title">Key members</h2>
       <!-- ANCHOR Jeff Johnson -->
       <div class="card">
         <div class="card__inner">
@@ -129,7 +138,7 @@
             <p class="card__back-item link"><a
                 href="https://news.nike.com/news/blue-ribbon-sports-santa-monica">Nike</a></p>
             <p class="card__back-item link"><a
-                href="https://www.runnersworld.com/advanced/a20792873/employee-number-one/">runnersworld.com</a> </p>
+                href="https://www.runnersworld.com/advanced/a20792873/employee-number-one/">runnersworld</a> </p>
           </div>
         </div>
       </div>
@@ -224,16 +233,44 @@
     </section>
 
   </main>
-  <footer>
-    <div class="footer__web-page">
-      <a href="https://www.nike.com">Nike offical</a>
-      <a href="https://about.nike.com/">About Nike</a>
+  <footer class="c-main-footer">
+    <div class="l-main-footer__item c-main-footer__links">
+      <div class="c-main-footer__web-page">
+        <a class="c-main-footer__link c-main-footer__nike" href="https://www.nike.com">Nike offical</a>
+        <a class="c-main-footer__link c-main-footer__nike" href="https://about.nike.com/">About Nike</a>
+      </div>
+      <div class="c-main-footer__soc-media">
+        <a class="c-main-footer__link c-main-footer__icon" href="https://www.facebook.com/nike"><i
+            class="fab fa-facebook"></i></a>
+        <a class="c-main-footer__link c-main-footer__icon" href="https://twitter.com/Nike"><i
+            class="fab fa-twitter"></i></a>
+        <a class="c-main-footer__link c-main-footer__icon" href="https://www.youtube.com/user/nike"><i
+            class="fab fa-youtube"></i></a>
+        <a class="c-main-footer__link c-main-footer__icon" href="https://www.instagram.com/nike/"><i
+            class="fab fa-instagram"></i></a>
+      </div>
     </div>
-    <div class="footer__soc-media">
-      <a href="https://www.facebook.com/nike"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/Nike"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.youtube.com/user/nike"><i class="fab fa-youtube"></i></a>
+    <div class="l-main-footer__item c-main-footer__sport">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/cycling.svg" alt="cycle">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+      <img src="../assets/images/footer/weightlifting.svg" alt="weightlifting">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img src="../assets/images/footer/cycling.svg" alt="cycling">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/cycling.svg" alt="cycle">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+      <img src="../assets/images/footer/weightlifting.svg" alt="weightlifting">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img src="../assets/images/footer/cycling.svg" alt="cycling">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
     </div>
+
   </footer>
 </body>
 

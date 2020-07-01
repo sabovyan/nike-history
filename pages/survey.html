@@ -21,38 +21,126 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="../css/all.css">
+  <!-- ANCHOR css & fontawesome -->
+  <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../style/style.css">
   <title>History</title>
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-      <img src="../images/Swoosh.png" alt="swoosh" width="65">
-    </a>
+  <header class="c-main-header">
+    <div class="c-main-header__logo">
+      <a class="c-main-header__image-link" href="../index.html">
+        <img class="c-main-header__image" src="../assets/images/Nike_logo.png" alt="swoosh" width="60">
+      </a>
 
-    <nav>
-      <a href="../index.html"> Home</a>
-      <a href="./history.html">history</a>
-      <a href="./founders.html">founders</a>
-      <a href="./facts.html">facts</a>
-      <a class="active" href="./survey.html">Survey</a>
+    </div>
+    <nav class="c-main-header__nav">
+      <ul class="c-main-header__list">
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link" href="../index.html"> Home</a>
+        </li>
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link" href="history.html">history</a>
+        </li>
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link" href="founders.html">founders</a>
+        </li>
+        <li class="c-main-header__list-item"><a class="c-main-header__list-link--active" href="survey.html">Survey</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
+    <div class="form-container">
+      <form class="form" id="form" action="" method="get">
+        <!-- ANCHOR personal info -->
+        <fieldset class="personal">
+          <legend class="personal__title">Personal info</legend>
+          <ul class="personal__content">
+            <li class="personal__content-item">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" required>
+            </li>
+            <li class="personal__content-item">
+              <label for="email">Mail:</label>
+              <input type="email" name="email" id="email" required>
+            </li>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Which brend do you prefer the most?</legend>
+          <ul>
+            <li><input type="radio" name="brand" id="nike" value="nike">
+              <label for="nike">Nike</label>
+            </li>
+            <li><input type="radio" name="brand" id="adidas" value="adidas">
+              <label for="adidas">Adidas</label>
+            </li>
+            <li>
+              <input type="radio" name="brand" id="puma" value="puma">
+              <label for="puma">Puma</label>
+            </li>
+            <li>
+              <input type="radio" name="brand" id="asics" value="asics">
+              <label for="asics">Asics</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>which inovetion do you like</legend>
+          <input type="checkbox" name="inovetion" id="waffle"><label for="waffle">Waffle</label>
+        </fieldset>
+        <fieldset>
+          <legend></legend>
+        </fieldset>
+        <fieldset>
+          <legend></legend>
+        </fieldset>
+        <fieldset>
+          <legend></legend>
+        </fieldset>
+      </form>
+    </div>
 
   </main>
-  <footer>
-    <div class="footer__web-page">
-      <a href="https://www.nike.com">Nike offical</a>
-      <a href="https://about.nike.com/">About Nike</a>
+  <footer class="c-main-footer">
+    <div class="l-main-footer__item c-main-footer__links">
+      <div class="c-main-footer__web-page">
+        <a class="c-main-footer__link c-main-footer__nike" href="https://www.nike.com">Nike offical</a>
+        <a class="c-main-footer__link c-main-footer__nike" href="https://about.nike.com/">About Nike</a>
+      </div>
+      <div class="c-main-footer__soc-media">
+        <a class="c-main-footer__link c-main-footer__icon" href="https://www.facebook.com/nike"><i
+            class="fab fa-facebook"></i></a>
+        <a class="c-main-footer__link c-main-footer__icon" href="https://twitter.com/Nike"><i
+            class="fab fa-twitter"></i></a>
+        <a class="c-main-footer__link c-main-footer__icon" href="https://www.youtube.com/user/nike"><i
+            class="fab fa-youtube"></i></a>
+        <a class="c-main-footer__link c-main-footer__icon" href="https://www.instagram.com/nike/"><i
+            class="fab fa-instagram"></i></a>
+      </div>
     </div>
-    <div class="footer__soc-media">
-      <a href="https://www.facebook.com/nike"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/Nike"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.youtube.com/user/nike"><i class="fab fa-youtube"></i></a>
+    <div class="l-main-footer__item c-main-footer__sport">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/cycling.svg" alt="cycle">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+      <img src="../assets/images/footer/weightlifting.svg" alt="weightlifting">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img src="../assets/images/footer/cycling.svg" alt="cycling">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/cycling.svg" alt="cycle">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+      <img src="../assets/images/footer/weightlifting.svg" alt="weightlifting">
+      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
+      <img src="../assets/images/footer/cycling.svg" alt="cycling">
+      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
+      <img src="../assets/images/footer/tennis.svg" alt="tennis">
     </div>
+
   </footer>
 </body>
 

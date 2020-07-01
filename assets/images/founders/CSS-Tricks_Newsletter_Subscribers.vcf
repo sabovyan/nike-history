@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+FN;CHARSET=UTF-8:Chris Coyier
+N;CHARSET=UTF-8:Chris Coyier;;;;
+PROFILE:VCARD
+ADR;CHARSET=UTF-8:;;919 NW Bond Ste,Ste 203;Bend;OR;97701;USA
+EMAIL:team@css-tricks.com
+ORG;CHARSET=UTF-8:CSS-Tricks
+URL:https://css-tricks.com
+END:VCARD

@@ -1,0 +1,7 @@
+:root {
+	--bg-black: #242424;
+	--nav-txt-color: white;
+	--nav-item-hover: #d44c4c;
+	--nav-bg-hover: #ffffff1c;
+	--nav-active: linear;
+}
