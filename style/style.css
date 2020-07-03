@@ -1,5 +1,6 @@
 @import 'navStyle.css';
 @import 'footer.css';
+@import './variables.css';
 * {
 	padding: 0;
 	margin: 0;
@@ -8,7 +9,18 @@
 html {
 	scroll-behavior: smooth;
 }
+body {
+	background-color: var(--main-bg);
+}
 main {
-	background-color: #fefefe;
-	margin: 4rem 0;
+}
+.section-title {
+	width: 400px;
+	margin: 2rem;
+	padding: 1rem;
+	color: var(--black);
+	text-transform: uppercase;
+	font-family: var(--head-text);
+	letter-spacing: 1rem;
+	border-bottom: 2px solid var(--red);
 }

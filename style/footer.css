@@ -1,9 +1,9 @@
 @import './variables.css';
 
 .c-main-footer {
-	height: 15rem;
+	font-family: 'Montserrat', sans-serif;
 	width: 100%;
-	background-color: var(--bg-black);
+	background-color: var(--black);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -13,7 +13,6 @@
 	padding: 1rem;
 	display: flex;
 	justify-content: space-between;
-
 	align-items: center;
 	width: 100%;
 
@@ -22,6 +21,7 @@
 .c-main-footer__links {
 	height: 100%;
 	align-items: flex-start;
+	padding: 1rem;
 }
 
 .c-main-footer__nike {
@@ -47,7 +47,7 @@
 	height: 100%;
 	top: 2px;
 	left: 0%;
-	border-bottom: 5px solid var(--nav-item-hover);
+	border-bottom: 5px solid var(--red);
 	z-index: 0;
 	transform: scaleX(0);
 	background: var(--nav-bg-hover);
@@ -73,7 +73,7 @@
 	position: relative;
 	padding: 1rem;
 	border-radius: 50%;
-	box-shadow: 1px 1px rgb(128, 126, 126);
+	box-shadow: 1px 1px var(--nav-bg-hover);
 }
 .c-main-footer__icon::after {
 	position: absolute;
@@ -82,7 +82,7 @@
 	height: 90%;
 	top: 0px;
 	left: 0px;
-	border: 2px solid var(--nav-item-hover);
+	border: 2px solid var(--red);
 	border-radius: 50%;
 	z-index: 1;
 	transform: scaleX(0);
@@ -98,15 +98,24 @@
 }
 
 .c-main-footer__sport img {
-	width: 40px;
-	transition: all 1s;
+	width: 30px;
+	transition: all 0.2s;
 }
 img.c-main-footer__box {
-	width: 30px;
+	width: 20px;
 }
 .c-main-footer__sport {
 	overflow: hidden;
 }
 .c-main-footer__sport img:hover {
 	transform: scale(1.5);
+}
+.c-main-footer__sport img:active {
+	animation: footer-anime 0.2s infinite;
+}
+
+@keyframes footer-anime {
+	50% {
+		flex-grow: 0.05;
+	}
 }

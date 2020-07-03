@@ -24,6 +24,7 @@
   <!-- ANCHOR css & fontawesome -->
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/survey.css">
   <title>History</title>
 </head>
 
@@ -48,60 +49,43 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="form-container">
-      <form class="form" id="form" action="" method="get">
-        <!-- ANCHOR personal info -->
-        <fieldset class="personal">
-          <legend class="personal__title">Personal info</legend>
-          <ul class="personal__content">
-            <li class="personal__content-item">
-              <label for="name">Name:</label>
-              <input type="text" name="name" id="name" required>
-            </li>
-            <li class="personal__content-item">
-              <label for="email">Mail:</label>
-              <input type="email" name="email" id="email" required>
-            </li>
-            <label for="birthday">Birthday:</label>
-            <input type="date" name="birthday" id="birthday">
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Which brend do you prefer the most?</legend>
-          <ul>
-            <li><input type="radio" name="brand" id="nike" value="nike">
-              <label for="nike">Nike</label>
-            </li>
-            <li><input type="radio" name="brand" id="adidas" value="adidas">
-              <label for="adidas">Adidas</label>
-            </li>
-            <li>
-              <input type="radio" name="brand" id="puma" value="puma">
-              <label for="puma">Puma</label>
-            </li>
-            <li>
-              <input type="radio" name="brand" id="asics" value="asics">
-              <label for="asics">Asics</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>which inovetion do you like</legend>
-          <input type="checkbox" name="inovetion" id="waffle"><label for="waffle">Waffle</label>
-        </fieldset>
-        <fieldset>
-          <legend></legend>
-        </fieldset>
-        <fieldset>
-          <legend></legend>
-        </fieldset>
-        <fieldset>
-          <legend></legend>
-        </fieldset>
-      </form>
-    </div>
+  <main class="main-page">
+    <h1 class="main-page__title">Survey</h1>
+    <form class="c-form" id="form" action="" method="get">
+      <!-- ANCHOR personal info -->
 
+      <h6 class="c-personal__title form__title">Personal info</h6>
+      <label class="c-form__label c-personal__name-label" for="name">Name:
+        <input class="c-form__input c-personal__name-input" type="text" name="name" id="name" required
+          autocomplete="off">
+      </label>
+      <label class="c-form__label c-personal__email-label" for="email">Mail:
+        <input class="c-form__input c-personal__email-input" type="email" name="email" id="email" required>
+      </label>
+      <label class="c-form__label c-personal__date-label" for="birthday">Birthday:
+        <input class="c-form__input c-personal__date-input" type="date" name="birthday" id="birthday">
+      </label>
+      <h6 class="c-frequancy__question form__title " for="frequancy">How often do you buy shoes?</h6>
+      <div class="c-frequancy__selector">
+        <label class="c-form__label" for="once-a-month">
+          <input class="" type="radio" name="frequancy" id="once-a-month">
+          Once a month
+        </label>
+        <label class="c-form__label" for="every-six-months">
+          <input type="radio" name="frequancy" id="every-six-months">
+          Once a month
+        </label>
+        <label class="c-form__label" for="once-a-year">
+          <input type="radio" name="frequancy" id="once-a-year">
+          Once a year
+        </label>
+        <label class="c-form__label" for="in-need">
+          <input type="radio" name="frequancy" id="in-need">
+          Only when I need to
+        </label>
+      </div>
+
+    </form>
   </main>
   <footer class="c-main-footer">
     <div class="l-main-footer__item c-main-footer__links">
