@@ -1,0 +1,52 @@
+@import './variables.css';
+
+.c-form {
+	width: 100%;
+	margin: 2rem;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(2, 1fr 2fr);
+	grid-template-rows: repeat(15, 1fr);
+}
+.form__title {
+	font-size: 1.5rem;
+}
+.c-personal__title {
+	grid-column: 1 / 2;
+}
+.c-personal__name-label {
+	grid-column: 1/2;
+	grid-row: 2 / 3;
+}
+.c-personal__name-input {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+.c-personal__email-label {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+.c-personal__email-input {
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+}
+
+.c-personal__date-label {
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
+}
+.c-personal__date-input {
+	grid-column: 2 / 3;
+	grid-row: 4 / 5;
+}
+.c-frequancy__question {
+	grid-column: 1 / -1;
+	grid-row: 5 / 6;
+}
+.c-frequancy__selector {
+	grid-column: 1 / -1;
+	grid-row: 6 / 7;
+}
+.c-frequancy__selector > .c-form__label {
+	margin: 1rem;
+}
