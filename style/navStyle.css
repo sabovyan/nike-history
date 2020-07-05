@@ -8,7 +8,7 @@
 	align-items: center;
 	background: var(--black);
 	font-family: var(--head-text);
-	padding: 0 10px;
+	padding: 0 1rem;
 	width: 100%;
 	position: sticky;
 	top: 0;
@@ -22,7 +22,6 @@
 
 .c-main-header__nav {
 	width: 50%;
-	height: 100%;
 }
 
 .c-main-header__list {
@@ -44,12 +43,8 @@
 	font-size: 1.5rem;
 	padding: 0.9rem;
 	text-align: center;
-	transition: all 0.2s;
 	text-decoration: none;
 	position: relative;
-}
-
-.c-main-header__list-link:hover {
 }
 
 .c-main-header__list-link::after {

@@ -1,6 +1,8 @@
 @import 'navStyle.css';
 @import 'footer.css';
 @import './variables.css';
+@import './media.css';
+
 * {
 	padding: 0;
 	margin: 0;

@@ -84,16 +84,12 @@
 /* SECTION timeline */
 .c-timeline {
 	margin: 5rem 0;
-	width: 100%;
+
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.c-timeline__title {
-	align-self: flex-start;
 }
 
 .l-timeline {
@@ -138,11 +134,6 @@
 	background-color: var(--red);
 }
 
-/* ANCHOR change color */
-.c-timeline__point:hover .c-timeline__icon {
-}
-
-/* ANCHOR change color */
 .c-timeline__point:hover + .c-timeline__content {
 	border-bottom: 3px solid var(--red);
 	box-shadow: 0 2px 2px 0 grey;
@@ -198,8 +189,58 @@
 	font-size: 1.1rem;
 	line-height: 1.4;
 }
-/* ANCHOR media */
-@media only screen and (max-width: 1000px) {
+/* SECTION media */
+@media only screen and (max-width: 600px) {
+	.l-timeline {
+		width: 90%;
+		margin: 0;
+		overflow: visible;
+	}
+	.c-timeline {
+		height: auto;
+	}
+	.c-timeline__point {
+		display: none;
+	}
+	.c-timeline__content {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 767.98px) {
+	.c-banner__img-serena {
+		display: none;
+	}
+	.c-banner__img-tiger {
+		display: none;
+	}
+	.c-banner__img-prefontaine {
+		display: none;
+	}
+	.c-banner__img-durant {
+		display: none;
+	}
+	.c-banner__img-jordan {
+		display: none;
+	}
+	.c-banner__img-nadal {
+		display: none;
+	}
+	.c-banner {
+		display: block;
+		height: 100vh;
+	}
+	.c-banner__title {
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.c-banner__letter,
+	.c-banner__letter--emphasized {
+		font-size: 2rem;
+		margin: 0.2rem;
+		padding: 0.2rem;
+	}
 	.c-timeline__point {
 		display: none;
 	}
@@ -208,29 +249,34 @@
 	}
 	.l-timeline {
 		overflow-x: hidden;
-		width: 1500%;
+		width: 90%;
 		margin: 0;
 	}
+	.c-timeline__content {
+		min-width: 300px;
+	}
+	.c-timeline__content::after {
+		display: none;
+	}
 }
-/* SECTION map */
-.c-map {
-	height: 100vh;
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+	.c-banner__letter,
+	.c-banner__letter--emphasized {
+		font-size: 2rem;
+		margin: 0.2rem;
+		padding: 0.2rem;
+	}
+	.l-timeline {
+		overflow-x: hidden;
+		width: 80%;
+		margin: 0;
+	}
+	.c-timeline__point {
+		display: none;
+	}
 }
-.c-map__title {
-	font-family: var(--head-text);
-	margin: 2rem 1rem;
-}
-.l-map__container {
-	overflow: hidden;
-	padding-bottom: 30%;
-	position: relative;
-	height: 0;
-	text-align: center;
-}
-.c-map__container iframe {
-	left: 0;
-	top: 0;
-	height: 100% !important;
-	width: 100% !important;
-	position: absolute;
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+	.c-timeline__point {
+		display: none;
+	}
 }

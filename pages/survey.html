@@ -4,23 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
   <!-- ANCHOR css & fontawesome -->
   <link rel="stylesheet" href="../assets/css/all.min.css">
   <link rel="stylesheet" href="../style/style.css">
@@ -51,41 +34,137 @@
   </header>
   <main class="main-page">
     <h1 class="main-page__title">Survey</h1>
-    <form class="c-form" id="form" action="" method="get">
-      <!-- ANCHOR personal info -->
-
-      <h6 class="c-personal__title form__title">Personal info</h6>
-      <label class="c-form__label c-personal__name-label" for="name">Name:
-        <input class="c-form__input c-personal__name-input" type="text" name="name" id="name" required
-          autocomplete="off">
-      </label>
-      <label class="c-form__label c-personal__email-label" for="email">Mail:
-        <input class="c-form__input c-personal__email-input" type="email" name="email" id="email" required>
-      </label>
-      <label class="c-form__label c-personal__date-label" for="birthday">Birthday:
-        <input class="c-form__input c-personal__date-input" type="date" name="birthday" id="birthday">
-      </label>
-      <h6 class="c-frequancy__question form__title " for="frequancy">How often do you buy shoes?</h6>
-      <div class="c-frequancy__selector">
-        <label class="c-form__label" for="once-a-month">
-          <input class="" type="radio" name="frequancy" id="once-a-month">
-          Once a month
-        </label>
-        <label class="c-form__label" for="every-six-months">
-          <input type="radio" name="frequancy" id="every-six-months">
-          Once a month
-        </label>
-        <label class="c-form__label" for="once-a-year">
-          <input type="radio" name="frequancy" id="once-a-year">
-          Once a year
-        </label>
-        <label class="c-form__label" for="in-need">
-          <input type="radio" name="frequancy" id="in-need">
-          Only when I need to
-        </label>
-      </div>
-
+    <form action="" method="" id="form" class="c-survey">
+      <fieldset class="c-survey__item c-survey__personal">
+        <h3 class="c-survey__title c-personal__title">Personal Information</h3>
+        <ul class="c-survey__content c-personal__content">
+          <li class="c-survey__item">
+            <label class="c-survey__label c-personal__label" for="name">Name:</label>
+            <input class="c-survey__input c-personal__input-text" type="text" name="name" id="name" required
+              autocomplete="off">
+          </li>
+          <li class="c-survey__item">
+            <label class="c-survey__label c-personal__label" for="email">Mail:</label>
+            <input class="c-survey__input c-personal__email-input" type="email" name="email" id="email" required
+              autocomplete="off">
+          </li>
+          <li class="c-survey__item">
+            <label class="c-survey__label c-personal__label" for="birthday">Birthday:</label>
+            <input class="c-survey__input c-personal__date-input" type="date" name="birthday" id="birthday">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="c-survey__item c-survey__description">
+        <h3 class="c-survey__title c-description__title">Your prefered shoes</h3>
+        <ul class="c-survey__content c-description__content">
+          <li class="c-survey__item">
+            <h4 class="c-survey__subtitle">What is the most important to
+              you
+              when
+              you look for
+              shoes?</h4>
+            <select class="c-survey__selector c-important-feature" name="important-feature" id="important-feature">
+              <option class="c-survey__option c-improtant-feature__option" value="" hidden selected="selected">
+                choose</option>
+              <option class="c-survey__option c-improtant-feature__option" value="design">Design</option>
+              <option class="c-survey__option c-improtant-feature__option" value="comfort">comfort</option>
+              <option class="c-survey__option c-improtant-feature__option" value="style">style</option>
+              <option class="c-survey__option c-improtant-feature__option" value="performance">performance</option>
+              <option class="c-survey__option c-improtant-feature__option" value="price">price</option>
+              <option class="c-survey__option c-improtant-feature__option" value="brnad">brand</option>
+            </select>
+          </li>
+          <li class="c-survey__item">
+            <h4 class="c-survey__subtitle">what type of shoe wearer best
+              describes you?</h4>
+            <select class="c-survey__selector c-wearing-purpose" name="wearing-purpose" id="wearing-purpose">
+              <option class="c-survey__option c-wearing-purpose__option" value="" hidden selected="selected">
+                choose</option>
+              <option class="c-survey__option c-wearing-purpose__option" value="athlethic">I wear for athlethic training
+              </option>
+              <option class="c-survey__option c-wearing-purpose__option" value="fashion">I wear for fashion reasons
+              </option>
+              <option class="c-survey__option c-wearing-purpose__option" value="both">both
+              </option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="c-survey__item c-survey__endorsement">
+        <h3 class="c-survey__title c-endorsement__title">Athlete vs Celebrity</h3>
+        <ul class="c-survey__content c-endorsement__content">
+          <li class="c-survey__item">
+            <h4 class="c-survey__subtitle">
+              Do youn prefer celebrity or athlete to be endorsing a shoe?
+            </h4>
+          </li>
+          <li class="c-survey__item l-flex">
+            <input class="c-survey__radio-btn" type="radio" name="endorsement" id="endorsementAthlete">
+            <label for="endorsementAthlete" class="c-survey__label c-endorsement__label">Athlete</label>
+            <input class="c-survey__radio-btn" type="radio" name="endorsement" id="endorsementCelebrity">
+            <label for="endorsementCelebrity" class="c-survey__label c-endorsement__label">Celebrity</label>
+            <input class="c-survey__radio-btn" type="radio" name="endorsement" id="notImportant">
+            <label for="notImportant" class="c-survey__label c-endorsement__label">It doesn't matter</label>
+          </li>
+          <li class="c-survey__item">
+            <h4 class="c-survey__subtitle">
+              Should a celebrity endorsed shoe cost more than an athlete endorsed shoe?
+            </h4>
+          </li>
+          <li class="c-survey__item l-flex">
+            <input class="c-survey__radio-btn" type="radio" name="cost" id="sAgree">
+            <label for="sAgree" class="c-survey__label c-cost__label c-cost__label--sAgree">strongly Agree</label>
+            <input class="c-survey__radio-btn" type="radio" name="cost" id="agree">
+            <label for="agree" class="c-survey__label c-cost__label c-cost__label--agree">Agree</label>
+            <input class="c-survey__radio-btn" type="radio" name="cost" id="undecided">
+            <label for="undecided" class="c-survey__label c-cost__label c-cost__label--undecided">Undecided</label>
+            <input class="c-survey__radio-btn" type="radio" name="cost" id="disagree">
+            <label for="disagree" class="c-survey__label c-cost__label c-cost__label--disgree">disagree</label>
+            <input class="c-survey__radio-btn" type="radio" name="cost" id="sDisagree">
+            <label for="sDisagree" class="c-survey__label c-cost__label c-cost__label--sDisgree">strongly
+              Disagree</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="c-survey__item c-survey__promote">
+        <h3 class="c-survey__title c-endorsement__title">
+          Next Promoting Celebrity
+        </h3>
+        <ul class="c-survey__content c-promote__content l-flex">
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="bieber">
+            <label for="bieber" class="c-survey__label c-promote__label">Justine Bieber</label>
+          </li>
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="kim">
+            <label for="kim" class="c-survey__label c-promote__label">Kim Kardashian</label>
+          </li>
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="gomez">
+            <label for="gomez" class="c-survey__label c-promote__label">Selena Gomez</label>
+          </li>
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="beyonce">
+            <label for="beyonce" class="c-survey__label c-promote__label">Beyonce</label>
+          </li>
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="khaled">
+            <label for="khaled" class="c-survey__label c-promote__label">Dj Khaled</label>
+          </li>
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="gaga">
+            <label for="gaga" class="c-survey__label c-promote__label">Lady Gaga</label>
+          </li>
+          <li class="c-survey__item">
+            <input class="c-survey__check-btn" type="checkbox" name="promotingCelebrity" id="other">
+            <label for="other" class="c-survey__label c-promote__label">Other</label>
+          </li>
+          <li class="c-survey__item"></li>
+        </ul>
+        <button class="c-survey__btn">submit</button>
+      </fieldset>
     </form>
+
   </main>
   <footer class="c-main-footer">
     <div class="l-main-footer__item c-main-footer__links">
@@ -118,11 +197,7 @@
       <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
       <img src="../assets/images/footer/cycling.svg" alt="cycle">
       <img src="../assets/images/footer/tennis.svg" alt="tennis">
-      <img src="../assets/images/footer/weightlifting.svg" alt="weightlifting">
-      <img src="../assets/images/footer/running.svg" alt="runner" class="c-main-footer__run">
-      <img src="../assets/images/footer/cycling.svg" alt="cycling">
-      <img class="c-main-footer__box" src="../assets/images/footer/boxing.svg" alt="fighter">
-      <img src="../assets/images/footer/tennis.svg" alt="tennis">
+
     </div>
 
   </footer>

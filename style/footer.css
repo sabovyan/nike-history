@@ -1,12 +1,13 @@
 @import './variables.css';
 
 .c-main-footer {
-	font-family: 'Montserrat', sans-serif;
 	width: 100%;
+	font-family: 'Montserrat', sans-serif;
 	background-color: var(--black);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	positionq
 }
 
 .l-main-footer__item {
@@ -14,12 +15,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-
-	box-sizing: border-box;
 }
 .c-main-footer__links {
-	height: 100%;
 	align-items: flex-start;
 	padding: 1rem;
 }
