@@ -1,0 +1,49 @@
+.timeline {
+	padding: 20px;
+	background-color: beige;
+	width: 50%;
+}
+.event {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	/* ANCHOR event height */
+	height: 6rem;
+}
+.point {
+	margin: 3%;
+	border-radius: 50%;
+	color: #35c0c0;
+	position: relative;
+}
+.point::after,
+.point::before {
+	content: '';
+	position: absolute;
+	background-color: #35c0c0;
+	width: 2px;
+	height: 2rem;
+	left: 0.5rem;
+}
+.point::after {
+	top: -2.5rem;
+}
+.point::before {
+	bottom: -2.5rem;
+}
+.date {
+	border: 2px solid #35c0c0;
+	width: 15%;
+	padding: 0.5rem;
+	text-align: center;
+	position: relative;
+	padding: 1%;
+	align-self: flex-start;
+}
+
+.details {
+	border: 1px solid #35c0c0;
+	flex-grow: 1;
+	align-self: flex-end;
+}

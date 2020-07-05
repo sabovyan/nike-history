@@ -1,0 +1,87 @@
+.c-main-header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--black);
+	font-family: var(--head-text);
+	padding: 0 1rem;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.c-main-header__image {
+	width: 60px;
+}
+
+.c-main-header__nav {
+	width: 50%;
+}
+
+.c-main-header__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.c-main-header__list-item {
+	height: 100%;
+}
+
+.c-main-header__list-link,
+.c-main-header__list-link--active {
+	color: white;
+	text-transform: capitalize;
+	line-height: 3rem;
+	font-weight: 300;
+	font-size: 1.5rem;
+	padding: 0.9rem;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+}
+
+.c-main-header__list-link::after {
+	position: absolute;
+	box-sizing: border-box;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: -4px;
+	left: 0%;
+	border-bottom: 5px solid var(--red);
+	z-index: -1;
+	transform: scaleX(0);
+}
+
+.c-main-header__list-link:hover::after {
+	/* 	background: var(--nav-item-hover); */
+	animation: background 0.5s forwards;
+}
+@keyframes background {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(0.8);
+	}
+}
+
+.c-main-header__list-link--active::after {
+	position: absolute;
+	box-sizing: border-box;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #ffffff1c;
+	transition: all 0.05s;
+	top: -4px;
+	left: 0%;
+	border-bottom: 5px solid var(--red);
+	z-index: -1;
+	transform: scaleX(1);
+}
