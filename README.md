@@ -24,21 +24,14 @@
 
 ## Additional tools
 
-> - 🚀[Gulp or Parsel]()
->
-> ### Modules
->
-> - 🛰[-image]()
-> - 🛰[-concat]()
-> - 🛰[gulp-autoprefixer]()
-> - 🛰[gulp-uncss]()
+> - 🚀[Parsel](https://parceljs.org/getting_started.html)
 
-- [facebook debugger](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fsabovyan.github.io%2Ffounders.html)
-- [twitter card validator](https://cards-dev.twitter.com/validator)
+> - [facebook debugger](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fsabovyan.github.io%2Ffounders.html)
+> - [twitter card validator](https://cards-dev.twitter.com/validator)
 
 ---
 
-## Each page and its implementation
+## Each page and implementation
 
 ### The project consists of four pages
 

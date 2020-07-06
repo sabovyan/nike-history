@@ -18,7 +18,7 @@
 	"bugs": {
 		"url": "https://github.com/sabovyan/sabovyan.github.io/issues"
 	},
-	"homepage": "https://github.com/sabovyan/sabovyan.github.io#readme",
+	"homepage": "https://github.com/sabovyan/sabovyan.github.io/dist",
 	"devDependencies": {
 		"parcel-bundler": "^1.12.4"
 	}
