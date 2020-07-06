@@ -2,7 +2,9 @@
 
 🌕 This project was created based on [html-css/homework](https://github.com/Advanced-JS-May/html-css/blob/master/homework.md) requirements
 
-> Open [sabovyan.github.io]('https://sabovyan.github.io/') to view it in the browser.
+> Open [sabovyan.github.io](https://sabovyan.github.io/founders.html) to view it in the browser.
+
+---
 
 ## Stack
 
@@ -29,6 +31,8 @@
   - 🛰[gulp-autoprefixer]()
   - 🛰[gulp-uncss]()
 
+---
+
 ## Each page and its implementation
 
 ### The project consists of four pages
@@ -37,6 +41,8 @@
 - 🌎 History
 - 🌍 founders
 - 🌏 Survey
+
+---
 
 ### 🌎 Home
 
@@ -57,6 +63,8 @@
 - 🌵 timeline - flexbox
   - I make shoeprints not visible for small screens
 
+---
+
 ### 🌎 History
 
 - 🌵 h1 - an animation which makes blinking effect
@@ -66,12 +74,16 @@
 
 _source for this page_ - [History of Nike timeline and facts](https://www.thestreet.com/lifestyle/history-of-nike-15057083) article from [Thestreet](https://www.thestreet.com/)
 
+---
+
 ### 🌍 founders
 
 ![image](https://drive.google.com/uc?export=view&id=1Jh7jKpNwGDWWSlSCh_s5UYpftbkiJOHA)
 
 - 🌵 the whole page was aligned using flexbox
 - 🌵 Each card is hover able and has a bit more information and links about the particular person
+
+---
 
 ### 🌍 Survey
 
@@ -82,4 +94,6 @@ _source for this page_ - [History of Nike timeline and facts](https://www.thestr
 
 - there is a little animation with `:hover` & `:active` for the icons at the end of the footer
 
-* \*BEM I have tried to use BEM for the whole project I am sure that there are lots of mistakes but I've tried to stick to this methodology
+---
+
+\* BEM I have tried to use BEM for the whole project I am sure that there are lots of mistakes but I've tried to stick to this methodology
