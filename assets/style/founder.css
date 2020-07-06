@@ -17,7 +17,7 @@
 }
 .card {
 	perspective: 1000px;
-	width: 250px;
+	width: 280px;
 	height: 350px;
 }
 .card__inner {
