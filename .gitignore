@@ -1,0 +1,4 @@
+# Dependency directory
+node_modules
+# Cache for Parcel
+.cache
