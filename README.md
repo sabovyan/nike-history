@@ -2,7 +2,7 @@
 
 🌕 This project was created based on [html-css/homework](https://github.com/Advanced-JS-May/html-css/blob/master/homework.md) requirements
 
-> Open [sabovyan.github.io](https://sabovyan.github.io/founders.html) to view it in the browser.
+> Open [sabovyan.github.io](https://sabovyan.github.io/index.html) to view it in the browser.
 
 ---
 
@@ -24,12 +24,14 @@
 
 ## Additional tools
 
-- 🚀[Gulp or Parsel]()
-  ### Modules
-  - 🛰[-image]()
-  - 🛰[-concat]()
-  - 🛰[gulp-autoprefixer]()
-  - 🛰[gulp-uncss]()
+> - 🚀[Gulp or Parsel]()
+>
+> ### Modules
+>
+> - 🛰[-image]()
+> - 🛰[-concat]()
+> - 🛰[gulp-autoprefixer]()
+> - 🛰[gulp-uncss]()
 
 ---
 
@@ -37,14 +39,14 @@
 
 ### The project consists of four pages
 
-- 🌎 Home
-- 🌎 History
-- 🌍 founders
-- 🌏 Survey
+- 🌎 [Home](https://sabovyan.github.io/index.html)
+- 🌎 [History](https://sabovyan.github.io/history.html)
+- 🌍 [founders](https://sabovyan.github.io/founders.html)
+- 🌏 [Survey](https://sabovyan.github.io/survey.html)
 
 ---
 
-### 🌎 Home
+### 🌎 [Home](https://sabovyan.github.io/index.html)
 
 ![image](https://drive.google.com/uc?export=view&id=1TFFCsg0KemRZrS6cdhynQNKkWqo4q0EM)
 
@@ -65,7 +67,7 @@
 
 ---
 
-### 🌎 History
+### 🌎 [History](https://sabovyan.github.io/history.html)
 
 - 🌵 h1 - an animation which makes blinking effect
 - 🌵 sections
@@ -76,7 +78,7 @@ _source for this page_ - [History of Nike timeline and facts](https://www.thestr
 
 ---
 
-### 🌍 founders
+### 🌍 [founders](https://sabovyan.github.io/founders.html)
 
 ![image](https://drive.google.com/uc?export=view&id=1Jh7jKpNwGDWWSlSCh_s5UYpftbkiJOHA)
 
@@ -85,7 +87,7 @@ _source for this page_ - [History of Nike timeline and facts](https://www.thestr
 
 ---
 
-### 🌍 Survey
+### 🌍 [Survey](https://sabovyan.github.io/survey.html)
 
 - 🌵This page was lined up with CSS Grid
 - 🌵 Maybe the layout is not that user-friendly, but I implemented this way to practice grid one more time
