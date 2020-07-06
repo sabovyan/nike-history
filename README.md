@@ -33,7 +33,8 @@
 > - 🛰[gulp-autoprefixer]()
 > - 🛰[gulp-uncss]()
 
-- [facebook debugger]()
+- [facebook debugger](https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fsabovyan.github.io%2Ffounders.html)
+- [twitter card validator](https://cards-dev.twitter.com/validator)
 
 ---
 
