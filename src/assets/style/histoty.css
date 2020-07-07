@@ -1,0 +1,218 @@
+.banner {
+	height: 100vh;
+	background: url('../images/history/neon-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 4rem;
+}
+
+.banner__header {
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	padding: 1.2rem;
+	text-transform: capitalize;
+	margin: 1rem;
+	font-size: 2.5rem;
+	color: #00eeff;
+	animation: colorSwitch 1s infinite linear;
+	text-shadow: 1px 1px 2px white;
+}
+@keyframes colorSwitch {
+	50% {
+		color: rgb(0, 255, 234);
+	}
+}
+.intro {
+	width: 90%;
+	font-family: var(--main-text);
+	font-weight: 100;
+	font-style: italic;
+	line-height: 1.4rem;
+	border-left: 2px solid var(--red);
+}
+.brs,
+.nike,
+.ipo,
+.intro {
+	padding: 2rem;
+	margin: 4rem;
+}
+
+.intro cite {
+	display: block;
+	text-align: right;
+	margin-top: 1rem;
+	color: var(--red);
+}
+
+i.section-title-icon {
+	letter-spacing: 0.8rem;
+	font-size: 2rem;
+	color: var(--red);
+}
+.section_img {
+	width: 50%;
+	margin: 1rem 1rem 0;
+	float: left;
+	box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.055);
+}
+.brs__item,
+.nike__item,
+.ipo__item {
+	font-family: var(--main-text);
+	line-height: 1.4rem;
+	font-weight: 300;
+}
+/* SECTION media */
+@media screen and (max-width: 700px) {
+	.banner {
+		height: 40vh;
+		background-size: 100%;
+		padding: 0rem 0;
+		position: relative;
+		background: url('../images/history/neon-background.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 90%;
+		padding-top: 0rem;
+	}
+	.banner__header {
+		text-align: center;
+		margin: 0rem;
+		padding: 0.5rem;
+		font-size: 1.2rem;
+		position: absolute;
+		bottom: 40px;
+		left: 20px;
+	}
+	.intro {
+		font-weight: 100;
+		font-style: italic;
+		line-height: 1.4rem;
+		margin: 1rem;
+		padding: 0 0.5rem;
+	}
+	.intro cite {
+		text-align: left;
+		margin-top: 1rem;
+	}
+	.brs,
+	.nike,
+	.ipo {
+		padding: 0;
+		margin: 2rem 0.5rem;
+	}
+	.section_img {
+		width: 100%;
+		margin: 1rem 0 1rem;
+		box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.055);
+	}
+
+	h2.section-title {
+		width: 100%;
+		text-align: left;
+		margin: 0;
+		padding: 0.2rem;
+	}
+	.brs__item,
+	.nike__item,
+	.ipo__item {
+		margin: 1rem 0;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 767.98px) {
+	.banner {
+		height: 70vh;
+		background-size: 100%;
+		padding: 4rem 0;
+	}
+	.banner__header {
+		text-align: center;
+		margin: 0rem;
+		padding: 0.5rem;
+		font-size: 1.8rem;
+	}
+	.intro {
+		font-weight: 100;
+		font-style: italic;
+		line-height: 1.4rem;
+		margin: 1rem;
+		padding: 0 0.5rem;
+	}
+	.intro cite {
+		text-align: left;
+		margin-top: 1rem;
+	}
+	.brs,
+	.nike,
+	.ipo {
+		padding: 0;
+		margin: 2rem 0.5rem;
+	}
+	.section_img {
+		width: 100%;
+		margin: 1rem 0 1rem;
+		box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.055);
+	}
+
+	h2.section-title {
+		width: 100%;
+		text-align: left;
+		margin: 0;
+		padding: 0.2rem;
+	}
+	.brs__item,
+	.nike__item,
+	.ipo__item {
+		margin: 1rem 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+	.banner {
+		height: 70vh;
+		background-size: 100%;
+		padding: 0rem 0;
+	}
+	.banner__header {
+		text-align: center;
+		margin: 0rem;
+		padding: 2rem;
+		font-size: 2rem;
+	}
+	.intro {
+		width: 90%;
+		font-family: var(--main-text);
+		font-weight: 100;
+		font-style: italic;
+		line-height: 1.4rem;
+		border-left: 2px solid var(--red);
+		padding: 2rem;
+		margin: 2rem;
+	}
+	.intro cite {
+		text-align: left;
+		margin-top: 1rem;
+	}
+	.brs,
+	.nike,
+	.ipo {
+		padding: 0;
+		margin: 2rem;
+	}
+	h2.section-title {
+		width: 90%;
+		text-align: left;
+		margin: 2rem 0;
+		padding: 0.2rem;
+	}
+	.section_img {
+		width: 100%;
+		margin: 1rem;
+		box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.055);
+	}
+
+	.brs__item,
+	.nike__item,
+	.ipo__item {
+		margin: 2rem 0;
+	}
+}
