@@ -2,7 +2,7 @@
 
 🌕 This project was created based on [html-css/homework](https://github.com/Advanced-JS-May/html-css/blob/master/homework.md) requirements
 
-> Open [sabovyan.github.io](https://sabovyan.github.io/index.html) to view it in the browser.
+> Open [sabovyan.github.io/nike-history/](https://sabovyan.github.io/nike-history/) to view it in the browser.
 
 ---
 
